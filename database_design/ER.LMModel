@@ -1,0 +1,202 @@
+<LMModel Align="68" DisplayFlags="0" LineColor="#000000" FillStyle="none" LineWidth="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" BackgroundColor="#ffffff" FontBold="0" BackgroundImagePlacement="0" FontItalic="0" ModificationDate="2018-04-27T17:48:43" TextFlag="2048" CreationDate="2018-04-27T17:40:50" BackgroundType="0" FontStrikeOut="0" Name="EatWhat" BackgroundStyle="none" Version="2.2" NextOID="30" FontFamily="Abyssinica SIL" >
+ <LMEntityNormal width="1" x="166" TextField="2" Align="68" y="149" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="1" height="1" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="1" x="194" TextField="2" Align="68" y="144" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="2" height="9" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="1" x="340" TextField="2" Align="68" y="235" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="3" height="1" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="1" x="53" TextField="2" Align="68" y="95" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="4" height="1" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="1" x="418" TextField="2" Align="68" y="224" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="5" height="1" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="1" x="379" TextField="2" Align="68" y="185" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="6" height="1" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" NextOID="1" FontFamily="Helvetica" />
+ <LMEntityNormal width="271" x="367" TextField="2" Align="68" y="172" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="7" height="201" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Customer" NextOID="8" FontFamily="Abyssinica SIL" >
+  <sink x="0.217712" y="0.970149" OID="7" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="8" Name="customer_id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="9" Name="customer_name" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="11" Name="phone" />
+  </LMAttribute>
+  <LMAttribute OID="4" >
+   <Uses Class="LMDataItem" Path="12" Name="address" />
+  </LMAttribute>
+  <LMAttribute OID="5" >
+   <Uses Class="LMDataItem" Path="13" Name="default_address" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="6" Name="customer_pk" >
+   <Uses Class="LMAttribute" Path="7,1" Name="customer_id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMEntityNormal width="218" x="25" TextField="2" Align="68" y="158" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="14" height="175" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Restaurant" NextOID="7" FontFamily="Abyssinica SIL" >
+  <sink x="0.440367" y="0.954286" OID="6" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="15" Name="restaurant_id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="16" Name="restaurant_name" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="17" Name="phone" />
+  </LMAttribute>
+  <LMAttribute OID="4" >
+   <Uses Class="LMDataItem" Path="18" Name="food" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="5" Name="restaurant_pk" >
+   <Uses Class="LMAttribute" Path="14,1" Name="restaurant_id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMEntityNormal width="262" x="160" TextField="2" Align="68" y="470" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="20" height="285" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Orders" NextOID="12" FontFamily="Abyssinica SIL" >
+  <sink x="0.118321" y="0.0912281" OID="10" />
+  <sink x="0.847328" y="0.0140351" OID="11" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="21" Name="order_id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="22" Name="customer_id" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="15" Name="restaurant_id" />
+  </LMAttribute>
+  <LMAttribute OID="4" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="24" Name="date" />
+  </LMAttribute>
+  <LMAttribute OID="5" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="25" Name="price" />
+  </LMAttribute>
+  <LMAttribute OID="6" >
+   <Uses Class="LMDataItem" Path="18" Name="food" />
+  </LMAttribute>
+  <LMAttribute OID="7" >
+   <Uses Class="LMDataItem" Path="27" Name="comment" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="8" Name="orders_pk" >
+   <Uses Class="LMAttribute" Path="20,1" Name="order_id" />
+  </LMIdentifier>
+  <LMIdentifier Primary="0" OID="9" Name="orders_fk" >
+   <Uses Class="LMAttribute" Path="20,2" Name="customer_id" />
+   <Uses Class="LMAttribute" Path="20,3" Name="restaurant_id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="0,1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="26658640" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="28" BeginArrowDirection="32595" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="order_food" EndCardinality="0,n" BeginTruncate="1" BeginArrowFlags="4" NextOID="6" FontFamily="Abyssinica SIL" >
+  <point x="426" y="367" OID="1" SinkObjectOID="7" SinkOID="7" />
+  <point x="382" y="474" OID="2" SinkObjectOID="20" SinkOID="11" />
+  <TextHandle x="-0.14245" y="1.57803" OID="3" />
+  <BeginRoleHandle x="-88" y="-8" OID="4" />
+  <EndRoleHandle x="57" y="-5" OID="5" />
+ </LMRelationship>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="7667780" EndArrowFlags="4" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="13" OID="29" BeginArrowDirection="4325443" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="receive_orders" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="5" NextOID="6" FontFamily="Abyssinica SIL" >
+  <point x="191" y="496" OID="1" SinkObjectOID="20" SinkOID="10" />
+  <point x="121" y="325" OID="2" SinkObjectOID="14" SinkOID="6" />
+  <TextHandle x="1.41667" y="-0.537634" OID="3" />
+  <BeginRoleHandle x="-14" y="-64" OID="4" />
+  <EndRoleHandle x="-11" y="10" OID="5" />
+ </LMRelationship>
+ <Validation>
+  <Rule Name="Model name missing" Value="Error" />
+  <Rule Name="Model comment missing" Value="Warning" />
+  <Rule Name="Model description missing" Value="Information" />
+  <Rule Name="Model author missing" Value="Warning" />
+  <Rule Name="Rule name missing" Value="Error" />
+  <Rule Name="Rule code missing" Value="Warning" />
+  <Rule Name="Rule comment missing" Value="Warning" />
+  <Rule Name="Rule description missing" Value="Information" />
+  <Rule Name="Rule name duplicate" Value="Error" />
+  <Rule Name="Rule code duplicate" Value="Error" />
+  <Rule Name="Rule not used" Value="Warning" />
+  <Rule Name="Domain name missing" Value="Error" />
+  <Rule Name="Domain code missing" Value="Warning" />
+  <Rule Name="Domain comment missing" Value="Warning" />
+  <Rule Name="Domain description missing" Value="Information" />
+  <Rule Name="Domain name duplicate" Value="Error" />
+  <Rule Name="Domain code duplicate" Value="Error" />
+  <Rule Name="Domain type missing" Value="Error" />
+  <Rule Name="Domain type unknown" Value="Error" />
+  <Rule Name="Domain not used" Value="Warning" />
+  <Rule Name="Data Item name missing" Value="Error" />
+  <Rule Name="Data Item code missing" Value="Warning" />
+  <Rule Name="Data Item comment missing" Value="Warning" />
+  <Rule Name="Data Item description missing" Value="Information" />
+  <Rule Name="Data Item name duplicate" Value="Error" />
+  <Rule Name="Data Item code duplicate" Value="Error" />
+  <Rule Name="Data Item type missing" Value="Error" />
+  <Rule Name="Data Item type unknown" Value="Error" />
+  <Rule Name="Data Item not used" Value="Warning" />
+  <Rule Name="Entity name missing" Value="Error" />
+  <Rule Name="Entity code missing" Value="Warning" />
+  <Rule Name="Entity comment missing" Value="Warning" />
+  <Rule Name="Entity description missing" Value="Information" />
+  <Rule Name="Entity name duplicate" Value="Error" />
+  <Rule Name="Entity code duplicate" Value="Error" />
+  <Rule Name="Entity attribute missing" Value="Error" />
+  <Rule Name="Entity primary identifier missing" Value="Warning" />
+  <Rule Name="Association name missing" Value="Error" />
+  <Rule Name="Association code missing" Value="Warning" />
+  <Rule Name="Association comment missing" Value="Warning" />
+  <Rule Name="Association description missing" Value="Information" />
+  <Rule Name="Association name duplicate" Value="Error" />
+  <Rule Name="Association code duplicate" Value="Error" />
+  <Rule Name="Association link missing" Value="Error" />
+  <Rule Name="Inheritance name missing" Value="Error" />
+  <Rule Name="Inheritance code missing" Value="Warning" />
+  <Rule Name="Inheritance comment missing" Value="Warning" />
+  <Rule Name="Inheritance description missing" Value="Information" />
+  <Rule Name="Inheritance name duplicate" Value="Warning" />
+  <Rule Name="Inheritance code duplicate" Value="Warning" />
+  <Rule Name="Inheritance link missing" Value="Error" />
+  <Rule Name="Relationship name missing" Value="Error" />
+  <Rule Name="Relationship code missing" Value="Warning" />
+  <Rule Name="Relationship comment missing" Value="Warning" />
+  <Rule Name="Relationship description missing" Value="Information" />
+  <Rule Name="Relationship name duplicate" Value="Warning" />
+  <Rule Name="Relationship code duplicate" Value="Warning" />
+  <Rule Name="Relationship child entity missing" Value="Error" />
+  <Rule Name="Relationship parent entity missing" Value="Error" />
+  <Rule Name="Association Link name missing" Value="Error" />
+  <Rule Name="Association Link code missing" Value="Warning" />
+  <Rule Name="Association Link comment missing" Value="Warning" />
+  <Rule Name="Association Link description missing" Value="Information" />
+  <Rule Name="Association Link name duplicate" Value="Warning" />
+  <Rule Name="Association Link code duplicate" Value="Warning" />
+  <Rule Name="Association Link entity missing" Value="Error" />
+  <Rule Name="Association Link association missing" Value="Error" />
+  <Rule Name="Inheritance Link name missing" Value="" />
+  <Rule Name="Inheritance Link code missing" Value="" />
+  <Rule Name="Inheritance Link comment missing" Value="" />
+  <Rule Name="Inheritance Link description missing" Value="" />
+  <Rule Name="Inheritance Link name duplicate" Value="" />
+  <Rule Name="Inheritance Link code duplicate" Value="" />
+  <Rule Name="Inheritance Link entity missing" Value="Error" />
+  <Rule Name="Inheritance Link inheritance missing" Value="Error" />
+  <Rule Name="Attribute name missing" Value="Error" />
+  <Rule Name="Attribute code missing" Value="Warning" />
+  <Rule Name="Attribute comment missing" Value="Warning" />
+  <Rule Name="Attribute description missing" Value="Information" />
+  <Rule Name="Attribute is indentifier but not mandatory" Value="Error" />
+  <Rule Name="Attribute name duplicate" Value="Error" />
+  <Rule Name="Attribute code duplicate" Value="Error" />
+  <Rule Name="Identifier name missing" Value="Error" />
+  <Rule Name="Identifier code missing" Value="Warning" />
+  <Rule Name="Identifier comment missing" Value="Warning" />
+  <Rule Name="Identifier description missing" Value="Information" />
+  <Rule Name="Identifier name duplicate" Value="Error" />
+  <Rule Name="Identifier code duplicate" Value="Error" />
+  <Rule Name="Identifier attribute missing" Value="Error" />
+ </Validation>
+ <LMDataItem Length="10" DataType="CHAR" OID="8" Name="customer_id" />
+ <LMDataItem Length="32" DataType="VARCHAR" OID="9" Name="customer_name" />
+ <LMDataItem OID="10" />
+ <LMDataItem Length="16" DataType="VARCHAR" OID="11" Name="phone" />
+ <LMDataItem DataType="LONG VARCHAR" OID="12" Name="address" ><![CDATA[json]]></LMDataItem>
+ <LMDataItem DataType="TINYINT" OID="13" Name="default_address" Default="0" />
+ <LMDataItem Length="10" DataType="VARCHAR" OID="15" Name="restaurant_id" />
+ <LMDataItem Length="32" DataType="VARCHAR" OID="16" Name="restaurant_name" />
+ <LMDataItem Length="16" DataType="VARCHAR" OID="17" Name="phone" />
+ <LMDataItem DataType="LONG VARCHAR" OID="18" Name="food" ><![CDATA[json]]></LMDataItem>
+ <LMDataItem OID="19" />
+ <LMDataItem DataType="INTEGER" OID="21" Name="order_id" />
+ <LMDataItem ServerCheckSize="7" Length="10" DataType="VARCHAR" OID="22" Name="customer_id" ServerCheck="789c2b4a2d2f4a2d6700000bbb02" />
+ <LMDataItem OID="23" />
+ <LMDataItem Length="32" DataType="VARCHAR" OID="24" Name="date" />
+ <LMDataItem DataType="INTEGER" OID="25" Name="price" />
+ <LMDataItem OID="26" />
+ <LMDataItem DataType="LONG VARCHAR" OID="27" Name="comment" />
+</LMModel>
